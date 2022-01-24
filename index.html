@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6a85a7927a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+</head>
+
+<body>
+    <!---------------------------------NAVBAR START---------------------------------->
+    <nav class="navbar navbar-expand-lg" style="position: fixed;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871050/images/profile_cedwkc.svg" width="40" height="40" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"><i class="fas fa-bars"></i>
+                </span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home" data-scroll-nav="0">HOME
+                            <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%"
+                                height="9" viewBox="0 0 101 9">
+                                <path
+                                    d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
+                                    pathLength="1" /></svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-scroll-nav="1">ABOUT
+                            <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%"
+                                height="9" viewBox="0 0 101 9">
+                                <path
+                                    d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
+                                    pathLength="1" /></svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" data-scroll-nav="3">SERVICE
+
+                            <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%"
+                                height="9" viewBox="0 0 101 9">
+                                <path
+                                    d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
+                                    pathLength="1" /></svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience" data-scroll-nav="2">EXPERIENCE
+                            <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%"
+                                height="9" viewBox="0 0 101 9">
+                                <path
+                                    d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
+                                    pathLength="1" /></svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio" data-scroll-nav="4">PROJECTS
+                            <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%"
+                                height="9" viewBox="0 0 101 9">
+                                <path
+                                    d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
+                                    pathLength="1" /></svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects" data-scroll-nav="5">BLOGS
+                            <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%"
+                                height="9" viewBox="0 0 101 9">
+                                <path
+                                    d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
+                                    pathLength="1" /></svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-scroll-nav="6">CONTACT
+                            <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%"
+                                height="9" viewBox="0 0 101 9">
+                                <path
+                                    d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
+                                    pathLength="1" /></svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="theme-switch-wrapper">
+                            <i class="fas fa-sun"></i>
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="slider round"></div>
+                            </label>
+                            <i class="fas fa-moon"></i> </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---------------------------------NAVBAR END------------------------------------>
+    <main class="content">
+        <section id="home">
+            <div class="container home">
+                <div class=" row d-flex align-content-center align-items-center ">
+                    <div class="col-md-5 mt-5 mt-md-0 ">
+                        <div class="row">
+                            <div class="col-3  d-flex justify-content-center align-items-center">
+                                <div class="home__social">
+                                    <a href="#" class="home__social-icon" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="home__social-icon" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="home__social-icon" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="home__social-icon" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="#" class="home__social-icon" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-9  home-img h-100  d-flex justify-content-center align-items-center">
+                                <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871050/images/profile_cedwkc.svg" class="home-image-content rounded-circle  h-auto w-100" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 mt-5 mt-md-0">
+                        <div class="home-text">
+                            <h2 class="intro-text mb-1">Hello, I am .....</h2>
+                            <h2 class="home__title"></h2>
+                            <h4 class="fw-bold">
+                                Frontend <span></span> Developer
+                            </h4>
+                            <p class="mt-4 text-muted">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus dolorem tempore minus. A accusantium provident ipsam, rem, recusandae repudiandae iste ullam quod sit nam totam voluptas fuga error, fugiat dicta.
+                            </p>
+                            <a href="https://res.cloudinary.com/dbjroyp2i/video/upload/v1642943297/intro_xwkext.mp4" class="video-popup btn intro-button px-3 mt-3 fw-bold ">INTRO <i
+                                    class="fas fa-play"></i></a>
+                            <!---------------------------------Main JS- ----------------------------------->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------------------------------ABOUT START---------------------------------->
+        <section id="about">
+            <div class="container about">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container-title">
+                            <a href="#" class="c-hover" data-letters="About Me"> About Me </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="about-text">
+                            <h3 class="mb-3">Lodolor sit amet consectetur adipisicing elit.</h3>
+                            <div class="typer text-center">
+                                <p>Coding is <span class="typed-text fw-bold"></span><span class="cursor"> &nbsp;
+                                    </span></p>
+                            </div>
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur culpa rerum error expedita mollitia tempora dolorum eum, reiciendis nesciunt animi cum consequuntur, officiis illum placeat a iure obcaecati provident dolore.</p>
+                        </div>
+                        <div class="row text-center text-uppercase my-3">
+                            <div class="col-sm-4">
+                                <div class="fact-item">
+                                    <div class="icon my-1">
+                                        <i class="fas fa-trophy"></i>
+                                    </div>
+                                    <h4 class="fs-3 fw-bold counter1" data-counterup-time="4000" data-counterup-delay="100" data-counterup-beginat="100">40</h4>
+                                    <p class="text-muted">Project Completed</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="fact-item">
+                                    <div class="icon my-1">
+                                        <i class="fas fa-user-friends"></i>
+                                    </div>
+                                    <h4 class="fs-3 fw-bold counter2" data-counterup-time="4000" data-counterup-delay="100" data-counterup-beginat="100"> 80 </h4>
+                                    <p class="text-muted">Satisfied Cust.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="fact-item">
+                                    <div class="icon my-1">
+                                        <i class="fas fa-user-shield"></i>
+                                    </div>
+                                    <h4 class="fs-3 fw-bold counter3" data-counterup-time="4000" data-counterup-delay="100" data-counterup-beginat="100"> 5 </h4>
+                                    <p class="text-muted">Years Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                                <a href="#" class="button">Download CV <i
+                                        class="fas fa-download"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-5 mt-md-0 d-flex align-items-center justify-content-center ">
+                        <div class="animation__frame">
+                            <div class="animator " id="animContainer"></div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="skill-box h-100">
+                            <h5 class="fw-bold  mb-5">Technology I familiar with:</h5>
+                            <div class="skill__wrapper d-flex justify-content-center flex-wrap">
+                                <div class="skill__badge orange">
+                                    <div class="rounded__icon"><i class="fab fa-html5"></i></div>
+                                </div>
+                                <div class="skill__badge blue">
+                                    <div class="rounded__icon"><i class="fab fa-css3-alt"></i></div>
+                                </div>
+                                <div class="skill__badge gold">
+                                    <div class="rounded__icon"><i class="fab fa-js-square"></i></div>
+                                </div>
+                                <div class="skill__badge purple">
+                                    <div class="rounded__icon"><i class="fab fa-php"></i></div>
+                                </div>
+                                <div class="skill__badge green">
+                                    <div class="rounded__icon"><i class="fab fa-node"></i></div>
+                                </div>
+                                <div class="skill__badge crimson">
+                                    <div class="rounded__icon"><i class="fab fa-npm"></i></div>
+                                </div>
+                                <div class="skill__badge steel">
+                                    <div class="rounded__icon"><i class="fab fa-python"></i></div>
+                                </div>
+                                <div class="skill__badge pink">
+                                    <div class="rounded__icon"><i class="fab fa-sass"></i></div>
+                                </div>
+                                <div class="skill__badge rebecca">
+                                    <div class="rounded__icon"><i class="fab fa-bootstrap"></i></div>
+                                </div>
+                                <div class="skill__badge gainsboro">
+                                    <div class="rounded__icon"><i class="fab fa-java"></i></div>
+                                </div>
+                                <div class="skill__badge orange">
+                                    <div class="rounded__icon"><i class="fab fa-wordpress"></i></i>
+                                    </div>
+                                </div>
+                                <div class="skill__badge blue">
+                                    <div class="rounded__icon"><i class="fab fa-react"></i></div>
+                                </div>
+                                <div class="skill__badge gold">
+                                    <div class="rounded__icon"><i class="fab fa-aws"></i></div>
+                                </div>
+                                <div class="skill__badge purple">
+                                    <div class="rounded__icon"><i class="fab fa-android"></i></div>
+                                </div>
+                                <div class="skill__badge green">
+                                    <div class="rounded__icon"><i class="fab fa-shopify"></i></div>
+                                </div>
+                                <div class="skill__badge crimson">
+                                    <div class="rounded__icon"><i class="fab fa-laravel"></i></div>
+                                </div>
+                                <div class="skill__badge steel">
+                                    <div class="rounded__icon"><i class="fab fa-python"></i></div>
+                                </div>
+                                <div class="skill__badge pink">
+                                    <div class="rounded__icon"><i class="fab fa-figma"></i></div>
+                                </div>
+                                <div class="skill__badge rebecca">
+                                    <div class="rounded__icon"><i class="fab fa-jenkins"></i></div>
+                                </div>
+                                <div class="skill__badge gainsboro">
+                                    <div class="rounded__icon"><i class="fab fa-github-alt"></i></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="skill-box h-100 d-flex justify-content-between align-items-center">
+                            <div class="skill">
+                                <div class="skill-name">UI Design</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per color1" per="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Frontend Development</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per color2" per="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Database Developement</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per color3" per="65"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Backend Development</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per color4" per="60"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Cloud Deployment</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per color5" per="50"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">DevOps Engineering</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per color6" per="45"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+        <!----------------------------------ABOUT END------------------------------------>
+
+        <!-------------------------------SERVICES START-------------------------------->
+
+        <section id="services">
+            <div class="container services">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container-title">
+                            <a href="#" class="c-hover" data-letters="SERVICES"> SERVICES </a>
+                        </div>
+                    </div>
+                    <div class="col-12 services-container">
+                        <div class="col-md-4">
+                            <!-- service box -->
+                            <div class="service-box text-center color3">
+                                <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871052/images/services/ux_design_aipjky.png" alt="UI/UX Designs">
+                                <h3 class="mb-3 mt-0">UI/UX Design</h3>
+                                <p class="mb-0">I create best UI/UX designs. user experience and user interface are the key feature of my development.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <!-- service box -->
+                            <div class="service-box text-center color1">
+                                <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871053/images/services/web_development_ep8bam.png" alt="Web Development">
+                                <h3 class="mb-3 mt-0" style="color: black;">Web Development</h3>
+                                <p class="mb-0" style="color: black;">Create web application with admin panel and all the latest features and costumer support.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <!-- service box -->
+                            <div class="service-box text-center color2">
+                                <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871052/images/services/software_development_gjr4nv.png" alt="Software Development">
+                                <h3 class="mb-3 mt-0">Software Development</h3>
+                                <p class="mb-0">Develop software for your company or business so it helps you to manage your business easily.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <!-- service box -->
+                            <div class="service-box text-center color3">
+                                <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871052/images/services/graphic_design_sngouk.png" alt="Graphics Design">
+                                <h3 class="mb-3 mt-0">Graphics Design</h3>
+                                <p class="mb-0">Create professional logo and graphics designs for your brand and company like poster, flyers etc.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <!-- service box -->
+                            <div class="service-box text-center color1">
+                                <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871052/images/services/website_design_z22axg.png" alt="Website Designing">
+                                <h3 class="mb-3 mt-0" style="color: black;">Website Designing</h3>
+                                <p class="mb-0" style="color: black;">Create professional looking website for your company or business and sell your products and services online.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <!-- service box -->
+                            <div class="service-box text-center color2">
+                                <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871052/images/services/freelance_kcwtyn.png" alt="Freelancing">
+                                <h3 class="mb-3 mt-0">Freelancing</h3>
+                                <p class="mb-0">I am available for freelance work so if you need any of your project to be done you can contact me.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-5 text-center hireme">
+                            <p class="mb-0">Looking for a Freelancer? <a href="#contact">Click here</a> to contact me! &#128075;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------------SERVICES END---------------------------------->
+
+        <!-----------------------------EXPERIENCE START-------------------------------->
+
+        <section id="experience">
+            <div class="container experience">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container-title"> <a href="#" class="c-hover" data-letters="EXPERIENCE">
+                                EXPERIENCE</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <!-- timeline wrapper -->
+                        <div class="timeline edu">
+
+                            <!-- timeline item -->
+                            <div class="timeline-container">
+                                <div class="content">
+                                    <span class="time">2018 - Present</span>
+                                    <h3 class="title">Bachelor&rsquo;s Degree</h3>
+                                    <p>Pursuing my Bachelor's of computer application from Dezyne E'cole college.</p>
+                                </div>
+                            </div>
+
+                            <!-- timeline item -->
+                            <div class="timeline-container">
+                                <div class="content">
+                                    <span class="time">2017 - 2018</span>
+                                    <h3 class="title">Higher Secondary</h3>
+                                    <p>Completed my higher secondary education from Queen mary's school.</p>
+                                </div>
+                            </div>
+
+                            <!-- timeline item -->
+                            <div class="timeline-container">
+                                <div class="content">
+                                    <span class="time">2015 - 2016</span>
+                                    <h3 class="title">Senior Secondary</h3>
+                                    <p>Completed my senior secondary education from St. paul's sr. sec school.</p>
+                                </div>
+                            </div>
+
+                            <!-- main line -->
+                            <span class="line"></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <!-- timeline wrapper -->
+                        <div class="timeline exp ">
+                            <!-- timeline item -->
+                            <div class="timeline-container wow fadeInUp">
+                                <div class="content">
+                                    <span class="time">2017 - Present</span>
+                                    <h3 class="title">Website Designing</h3>
+                                    <p>I have a rich experience in website designing and development.</p>
+                                </div>
+                            </div>
+
+                            <!-- timeline item -->
+                            <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="content">
+                                    <span class="time">2018 - Present</span>
+                                    <h3 class="title">Software Development</h3>
+                                    <p>I have a great experience in software designing and development.</p>
+                                </div>
+                            </div>
+
+                            <!-- timeline item -->
+                            <div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="content">
+                                    <span class="time">2017 - Present</span>
+                                    <h3 class="title">Freelancing</h3>
+                                    <p>I have Excellent experience in freelancing. My first priority is costumer satisfaction.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- main line -->
+                            <span class="line"></span>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-----------------------------EXPERIENCE END-------------------------------->
+
+        <!-------------------------------HIREME START---------------------------------->
+
+        <section id="hire">
+
+            <div class="hire-text">
+                <h1>Hire Me For Your Awesome Project</h1>
+                <h5 class="m-3">I am Available for freelance work so if you need any of your project to be done you can contact me.</h5>
+                <a href="#contact"><button class="button m-3">Hire Me</button></a>
+
+            </div>
+
+        </section>
+
+
+        <!--------------------------------HIREME END----------------------------------->
+
+
+        <!-- portfolio section start -->
+        <section class="img-gallery section-padding" data-scroll-index="3" id="portfolio">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h2 class="container-title">Experience</h2>
+                    </div>
+
+                    <div class="col-lg-8 d-flex justify-content-center sortBtn flex-wrap">
+                        <a href="#" class="filter-btn active" data-filter="*">all</a>
+                        <a href="#" class="filter-btn" data-filter=".wordpress">wordpress</a>
+                        <a href="#" class="filter-btn" data-filter=".photoshop">photoshop</a>
+                        <a href="#" class="filter-btn" data-filter=".web-design">web design</a>
+                    </div>
+                </div>
+                <!-- portfolio items -->
+                <div class="row grid">
+                    <div class="col-lg-4 col-md-6 col-sm-6 wordpress">
+                        <div class="single-work text-center mt-30">
+                            <div class="work-image">
+                                <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871052/images/project/project6_gglm6y.webp" alt="">
+                            </div>
+                            <div class="work-overlay">
+                                <div class="work-content">
+                                    <h3 class="work-title">Product Design</h3>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-plus"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single project 1 -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 photoshop">
+                        <div class="single-work text-center mt-30">
+                            <div class="work-image">
+                                <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871052/images/project/project5_razu8q.webp" alt="">
+                            </div>
+                            <div class="work-overlay">
+                                <div class="work-content">
+                                    <h3 class="work-title">Product Design</h3>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-plus"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single project 2 -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 wordpress">
+                        <div class="single-work text-center mt-30">
+                            <div class="work-image">
+                                <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871051/images/project/project3_tsk8si.webp" alt="">
+                            </div>
+                            <div class="work-overlay">
+                                <div class="work-content">
+                                    <h3 class="work-title">Product Design</h3>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-plus"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single project 3-->
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 web-design">
+                        <div class="single-work text-center mt-30">
+                            <div class="work-image">
+                                <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871051/images/project/project1_n2wngj.webp" alt="">
+                            </div>
+                            <div class="work-overlay">
+                                <div class="work-content">
+                                    <h3 class="work-title">Product Design</h3>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-plus"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single project 4 -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 photoshop">
+                        <div class="single-work text-center mt-30">
+                            <div class="work-image">
+                                <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871051/images/project/project4_xzczlo.webp" alt="">
+                            </div>
+                            <div class="work-overlay">
+                                <div class="work-content">
+                                    <h3 class="work-title">Product Design</h3>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-plus"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single project 5 -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 photoshop">
+                        <div class="single-work text-center mt-30">
+                            <div class="work-image">
+                                <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871051/images/project/project2_otln2b.webp" alt="">
+                            </div>
+                            <div class="work-overlay">
+                                <div class="work-content">
+                                    <h3 class="work-title">Product Design</h3>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-plus"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single project 6-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio section end -->
+        <!------------------------------PROJECTS START--------------------------------->
+
+
+        <!------------------------------BLOGS START--------------------------------->
+
+
+        <section id="blogs">
+            <div class="container blogs">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container-title"> <a href="#" class="c-hover" data-letters="BLOGS"> BLOGS </a></div>
+                    </div>
+                    <div class="col-md-12">
+                        <div id="news-slider" class="owl-carousel">
+                            <div class="post-slide">
+                                <div class="post-img">
+                                    <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871051/images/blog/blog2_auy6un.jpg" alt="Portfolio Image">
+                                    <div class="category">Website</div>
+                                </div>
+                                <div class="post-review">
+                                    <h3 class="post-title"><a href="index.html">A Website on Personal Portfolio &amp;
+                                            Resume</a></h3>
+
+                                    <div class="post-bar">
+                                        <span><i class="fa fa-user"></i>By: Admin</span>
+                                        <span class="comments"><i class="fa fa-comments"></i> <a href="index.html">Read
+                                                More</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-slide">
+                                <div class="post-img">
+                                    <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871050/images/blog/blog1_sg6yft.jpg" alt="Bank Image">
+                                    <div class="category">Software</div>
+                                </div>
+                                <div class="post-review">
+                                    <h3 class="post-title"><a href="index.html">Banking Service Software in c++
+                                            language</a></h3>
+
+                                    <div class="post-bar">
+                                        <span><i class="fa fa-user"></i>By: Admin</span>
+                                        <span class="comments"><i class="fa fa-comments"></i> <a href="index.html">Read
+                                                More</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-slide">
+                                <div class="post-img">
+                                    <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871050/images/blog/blog5_n2hv72.jpg" alt="voice Assistant Image">
+                                    <div class="category">Software</div>
+                                </div>
+                                <div class="post-review">
+                                    <h3 class="post-title"><a href="index.html">Jarvis Desktop Assistant in Python
+                                            language</a></h3>
+
+                                    <div class="post-bar">
+                                        <span><i class="fa fa-user"></i>By: Admin</span>
+                                        <span class="comments"><i class="fa fa-comments"></i> <a href="index.html">Read
+                                                More</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-slide">
+                                <div class="post-img">
+                                    <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871050/images/blog/blog4_j7fzwi.jpg" alt="Game Image">
+                                    <div class="category">Game</div>
+                                </div>
+                                <div class="post-review">
+                                    <h3 class="post-title"><a href="index.html">Brick Breaker game in java
+                                            language</a></h3>
+
+                                    <div class="post-bar">
+                                        <span><i class="fa fa-user"></i>By: Admin</span>
+                                        <span class="comments"><i class="fa fa-comments"></i> <a href="index.html">Read
+                                                More</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-slide">
+                                <div class="post-img">
+                                    <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871050/images/blog/blog3_ihyijk.jpg" alt="Website Image">
+                                    <div class="category">Website</div>
+                                </div>
+                                <div class="post-review">
+                                    <h3 class="post-title"><a href="index.html">A Website on apple smart
+                                            watches</a></h3>
+
+                                    <div class="post-bar">
+                                        <span><i class="fa fa-user"></i>By: Admin</span>
+                                        <span class="comments"><i class="fa fa-comments"></i> <a href="index.html">Read
+                                                More</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!------------------------------PROJECTS END----------------------------------->
+
+
+        <!---------------------------TESTIMONIALS START-------------------------------->
+
+        <section id="testimonial">
+            <div id="particles-js"></div>
+            <div class="container testimonial">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container-title"> <a href="#" class="c-hover" data-letters="REVIEWS"> REVIEWS </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div id="testimonial-slider" class="owl-carousel">
+                            <div class="testimonial-box">
+                                <div class="pic">
+                                    <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871053/images/testimonials/profile-user3_q2hqks.svg" alt="client">
+                                </div>
+                                <h3 class="testimonial-title">
+                                    John Alexy
+                                </h3>
+                                <p class="description">
+                                    Excellent, working with Dev Bj was great. Thanks to their knowledge and determination our website looks great and functions really good. I am recommend anyone that is looking for a custom website to give them a call, he will guide you to the right direction
+                                    &#128293;
+                                </p>
+                            </div>
+
+                            <div class="testimonial-box">
+                                <div class="pic">
+                                    <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871053/images/testimonials/profile-user1_pslpqx.svg" alt="client">
+                                </div>
+                                <h3 class="testimonial-title">
+                                    Proman Devid
+                                </h3>
+                                <p class="description">
+                                    My new site created by Dev just launched. He done a great job of creating exactly what I wanted. Easy to work with and very responsive. They met all of my expectations and had a lot of insight regarding marketing tools I didn't know existed &#128079;
+                                </p>
+                            </div>
+
+                            <div class="testimonial-box">
+                                <div class="pic">
+                                    <img src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871053/images/testimonials/profile-user2_qrbybo.svg" alt="client">
+                                </div>
+                                <h3 class="testimonial-title">
+                                    Darker Youmd
+                                </h3>
+                                <p class="description">
+                                    I have been very happy with the customer service and the attention to detail. I highly recommend Dev for both your website and SEO needs. I trust that Dev will do what is needed to be sure their clients are completely satisfied &#128077;
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!---------------------------TESTIMONIALS END---------------------------------->
+        <!----------------------------CONTACT START------------------------------------>
+
+
+
+        <section id="contact">
+            <div class="container contact">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="container-title">Get In Touch</h2>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="contact-card">
+                            <div class="follow-card">
+                                <div class="card-title">
+                                    <img class="card-img" src="https://res.cloudinary.com/dbjroyp2i/image/upload/v1642871050/images/profile_cedwkc.svg" alt="Aavtar">
+                                    <div class="card-title-text">
+                                        <h4>DEV BJ</h4>
+                                        <h6>@dev_bj</h6>
+                                    </div>
+                                </div>
+                                <div class="card-text">
+                                    <p class="description">
+                                        Self motivated and hard working fresher seeking for an opportunity to work in a challenging environment to prove my skill and utilize my knowledge &amp; intelligence in the growth of the organization.
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <a href="https://www.instagram.com/Bj_Dev_"><button
+                                            class="button">Follow</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center hireme">
+                            <p class="mb-0">Don't Like Forms? <a href="mailto:DevBj908@gmail.com">Click here</a> to send me an Email! &#128233;</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 ">
+                        <div class="contact-form">
+                            <form action="email.php" method="post">
+                                <div class="row form-box">
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control mb-30" name="name" placeholder="Name *" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control mb-30" name="email" placeholder="Email *" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-12">
+                                        <div class="form-group">
+                                            <input type="text" name="subject" class="form-control mb-30" placeholder="Subject *" required="required">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control mb-30" name="message" rows="8" cols="80" placeholder="Message *" required="required"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-8 col-sm-10">
+                                        <button class="button" type="submit" value="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 vertical-slider">
+                        <p>I am Developer ✌️</p>
+                        <p>I am Designer 🍓</p>
+                        <p>I am Tech Lover 💥</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-----------------------------CONTACT END------------------------------------->
+        <!------------------------------FOOTER START----------------------------------->
+
+
+
+        <footer class="new_footer_area bg_color">
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <div class="glooey">
+                                <div class="c-social-media">
+                                    <button class="c-social-media__btn js-share-btn" aria-hidden="true">
+                                        <svg class="c-social-media__icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 58.995 58.995">
+                                            <path
+                                                d="M39.927 41.929c-.524.524-.975 1.1-1.365 1.709l-17.28-10.489a9.93 9.93 0 0 0 .716-3.693 9.949 9.949 0 0 0-.715-3.693l17.284-10.409C40.342 18.142 43.454 20 46.998 20c5.514 0 10-4.486 10-10s-4.486-10-10-10-10 4.486-10 10a9.94 9.94 0 0 0 .667 3.562L20.358 23.985c-1.788-2.724-4.866-4.529-8.361-4.529-5.514 0-10 4.486-10 10s4.486 10 10 10c3.495 0 6.572-1.805 8.36-4.529L37.661 45.43a9.987 9.987 0 0 0-.664 3.57 9.932 9.932 0 0 0 2.929 7.071c1.949 1.949 4.51 2.924 7.071 2.924s5.122-.975 7.071-2.924c1.889-1.889 2.929-4.4 2.929-7.071s-1.04-5.183-2.929-7.071c-3.899-3.9-10.242-3.9-14.141 0zM46.998 2c4.411 0 8 3.589 8 8s-3.589 8-8 8-8-3.589-8-8 3.588-8 8-8zm-35 35.456c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm40.656 17.201c-3.119 3.119-8.194 3.119-11.313 0A7.95 7.95 0 0 1 38.998 49a7.95 7.95 0 0 1 2.343-5.657c1.56-1.56 3.608-2.339 5.657-2.339s4.097.779 5.657 2.339c1.511 1.511 2.343 3.521 2.343 5.657s-.832 4.146-2.344 5.657z" />
+                                        </svg>
+                                    </button>
+                                    <ul class="c-social-media__list">
+                                        <li class="c-social-media__item">
+                                            <a href="#" class="c-social-media__link">
+                                                <svg class="c-social-media__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612">
+                                                    <path
+                                                        d="M612 116.258a250.714 250.714 0 0 1-72.088 19.772c25.929-15.527 45.777-40.155 55.184-69.411-24.322 14.379-51.169 24.82-79.775 30.48-22.907-24.437-55.49-39.658-91.63-39.658-69.334 0-125.551 56.217-125.551 125.513 0 9.828 1.109 19.427 3.251 28.606-104.326-5.24-196.835-55.223-258.75-131.174-10.823 18.51-16.98 40.078-16.98 63.101 0 43.559 22.181 81.993 55.835 104.479a125.556 125.556 0 0 1-56.867-15.756v1.568c0 60.806 43.291 111.554 100.693 123.104-10.517 2.83-21.607 4.398-33.08 4.398-8.107 0-15.947-.803-23.634-2.333 15.985 49.907 62.336 86.199 117.253 87.194-42.947 33.654-97.099 53.655-155.916 53.655-10.134 0-20.116-.612-29.944-1.721 55.567 35.681 121.536 56.485 192.438 56.485 230.948 0 357.188-191.291 357.188-357.188l-.421-16.253c24.666-17.593 46.005-39.697 62.794-64.861z" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="c-social-media__item">
+                                            <a href="#" class="c-social-media__link">
+                                                <svg class="c-social-media__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430.117 430.117">
+                                                    <path
+                                                        d="M430.117 261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707-25.473 0-40.632 17.142-47.301 33.724-2.432 5.928-3.058 14.179-3.058 22.477V420.56h-92.219s1.242-251.285 0-277.32h92.21v39.309c-.187.294-.43.611-.606.896h.606v-.896c12.251-18.869 34.13-45.824 83.102-45.824 60.673-.001 106.157 39.636 106.157 124.818zM52.183 9.558C20.635 9.558 0 30.251 0 57.463c0 26.619 20.038 47.94 50.959 47.94h.616c32.159 0 52.159-21.317 52.159-47.94-.606-27.212-20-47.905-51.551-47.905zM5.477 420.56h92.184V143.24H5.477v277.32z" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="c-social-media__item">
+                                            <a href="#" class="c-social-media__link">
+                                                <svg class="c-social-media__icon" xmlns="http://www.w3.org/2000/svg" width="31.665" height="31.665" viewBox="0 0 31.665 31.665">
+                                                    <path
+                                                        d="M16.878.415a2.501 2.501 0 0 0-2.809.034L1.485 9.214a2.5 2.5 0 0 0-1.071 2.052v9.444c0 .84.421 1.623 1.122 2.086l12.79 8.455a2.5 2.5 0 0 0 2.758 0l13.044-8.618a2.501 2.501 0 0 0 1.122-2.086v-9.279a2.5 2.5 0 0 0-1.121-2.085L16.878.415zm9.743 10.23L21.8 13.882l-4.521-3.288-.029-6.467 9.371 6.518zM13.979 4.133v6.329l-4.633 3.24-4.621-3.099 9.254-6.47zM3.458 13.722l2.991 2.004-2.991 2.093v-4.097zm10.6 13.493l-9.331-6.258 4.661-3.258 4.67 3.133v6.383zm-1.772-11.541l3.021-2.113 3.519 2.313-3.119 2.095-3.421-2.295zm5.068 11.541V20.83l4.463-2.991 4.805 3.159-9.268 6.217zm10.6-9.288l-3.168-2.082 3.168-2.125v4.207z" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="c-social-media__item">
+                                            <a href="#" class="c-social-media__link">
+                                                <svg class="c-social-media__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title" aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <path
+                                                        d="M39.8 12.2H48V0h-9.7C26.6.5 24.2 7.1 24 14v6.1h-8V32h8v32h12V32h9.9l1.9-11.9H36v-3.7a3.962 3.962 0 0 1 3.8-4.2z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <svg class="svg__glooey">
+                                <defs>
+                                    <filter id="goo">
+                                        <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />
+                                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0
+                                                                           0 1 0 0 0
+                                                                           0 0 1 0 0
+                                                                           0 0 0 35 -15" result="color" />
+                                        <feComposite in="SourceGraphic" in2="color" operator="atop" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="footer-text col-12 text-center">
+                            <p class="mb-3"> Made With <span class="heart"></span> By BJ </p>
+                            <p class="mb-3">&copy;
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script> All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Progress -->
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+        <!------------------------------FOOTER END------------------------------------->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vara@1.4.0/lib/vara.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bigpicture/2.5.3/BigPicture.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./asset/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
