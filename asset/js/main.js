@@ -1,3 +1,15 @@
+//----------------------------------Pre-loader----------------------------------//
+
+
+window.onload = function() {
+    var preloader = document.getElementsByClassName('preloader')[0];
+    setTimeout(function() {
+        preloader.style.display = 'none';
+    }, 4000);
+};
+
+
+
 //filter
 let $btns = $('.img-gallery .sortBtn .filter-btn');
 $btns.click(function(e) {
@@ -526,3 +538,84 @@ asides.forEach(aside => {
 })
 
 $('.counter1').counterUp();
+
+
+
+//---------------------------------Loader Animation---------------------------//
+const anim = anime.timeline({
+    loop: false,
+    direction: 'alternate',
+});
+
+anim
+    .add({
+        targets: '#hexagon path',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutQuart',
+        duration: 2000,
+        delay: function(el, i) {
+            return i * 250
+        },
+    })
+    .add({
+        targets: '#hexagon #B',
+        duration: 1000,
+        opacity: 1,
+        easing: 'easeInOutQuart'
+    })
+    .add({
+        targets: '#hexagon #B',
+        opacity: 0,
+        duration: 500,
+        easing: 'easeInOutQuart'
+    })
+    .add({
+        targets: '#hexagon path',
+        opacity: 0,
+        duration: 500,
+        easing: 'easeInOutQuart'
+    });
+
+
+
+function initHeaderTilt() {
+    select('.home').addEventListener('mousemove', moveImages);
+}
+
+function moveImages(e) {
+
+    const {
+        offsetX,
+        offsetY,
+        target
+    } = e;
+    const {
+        clientWidth,
+        clientHeight
+    } = target;
+
+    const xPos = (offsetX / clientWidth) - 0.5;
+    const yPos = (offsetY / clientHeight) - 0.5;
+
+    const image = select('.home-img,.home-text');
+    gsap.to(image, {
+        duration: 1.2,
+        x: xPos * 10,
+        y: yPos * 15,
+        rotationY: xPos * 60,
+        rotationX: yPos * 20,
+        ease: 'power3.out'
+    });
+}
+initHeaderTilt();
+
+function animationFlow() {
+
+    const TL = gsap.timeline({ repeat: -1 })
+
+    TL
+        .from('.vertical-slider p', { y: 55, autoAlpha: 0, duration: 1.25, stagger: 1.25 })
+        .to('.vertical-slider p', { y: -55, autoAlpha: 0, duration: 1.25, stagger: 1.25 }, 1.25)
+
+}
+animationFlow();
