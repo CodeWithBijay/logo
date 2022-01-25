@@ -197,9 +197,6 @@ $(document).ready(function() {
         } // End if
     });
 });
-$('.counter1').counterUp();
-
-
 
 
 //---------------------------------Blog slider---------------------------//
@@ -450,3 +447,82 @@ $(document).ready(function() {
         return false;
     });
 });
+
+
+/*****Lottie Animation******/
+var animator = bodymovin.loadAnimation({
+    container: document.querySelector("#animContainer"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: "/asset/json/lottie.json", // lottie file path
+});
+const asides = document.querySelectorAll("aside.slides")
+const mq = window.matchMedia("(max-width: 1024px)")
+
+asides.forEach(aside => {
+
+    const holder = aside.querySelector("div.holder")
+    const info = aside.querySelector("div.info")
+    const images = holder.querySelectorAll("img")
+
+    let current = 0
+    let z = 100000
+
+    //gsap.set(info, { opacity: 0 })
+    gsap.set(images, { x: 0, y: "400%" })
+
+    images.forEach((image, index) => {
+        gsap.set(image, { zIndex: z })
+        z = z - 1
+    })
+
+    imagesLoaded(images, function() {
+        const timeline = gsap.timeline()
+
+        timeline
+            .set(images, {
+                x: () => { return 500 * Math.random() - 250 },
+                rotation: () => { return 90 * Math.random() - 45 }
+            })
+            .to(images, { x: 0, y: 0, stagger: -0.25 })
+            .to(images, {
+                rotation: (index, target) => { return -8 + 16 * Math.random() },
+                delay: 0.5,
+                stagger: 0.25
+            })
+    })
+
+
+    holder.addEventListener("click", function() {
+        const imageNumber = current % images.length
+        const currentImage = images[imageNumber]
+
+        // currentImage.style.zIndex = z
+        current = current + 1
+
+
+        let direction = "150%"
+        let midAngle = 15
+        const endAngle = -8 + 16 * Math.random()
+
+        if (Math.random() > 0.5) {
+            direction = "-150%"
+            midAngle = -15
+        }
+
+        const timeline = gsap.timeline()
+
+        timeline
+            .set(currentImage, { x: 0, y: 0 })
+            .to(currentImage, { x: direction, y: 80, rotation: midAngle, duration: 0.5 })
+            .add(function() {
+                currentImage.style.zIndex = z
+                z = z - 1
+            })
+            .to(currentImage, { x: 0, y: 0, rotation: endAngle, duration: 0.4 })
+    })
+
+})
+
+$('.counter1').counterUp();
